@@ -22,8 +22,8 @@ const AboutSection = (props) => {
       {/* for title and description in about section */}
       
       <div className="w-full md:w-1/2 text-left">
-        <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">{props.title}</h2>
-        <p className="text-gray-600 leading-relaxed">{props.description}</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">{props.title}</h2>
+        <p className="text-gray-200 leading-relaxed">{props.description}</p>
       </div>
 
 

@@ -37,7 +37,7 @@ const Testimonials = () => {
     ]
 
     return (
-        <div className="w-full bg-black py-20">   
+        <div className="w-full bg-[#221248] py-20">   
             <div className="scrollBarRemover flex flex-nowrap gap-6 md:gap-8 lg:gap-10 overflow-x-auto pb-6 mx-4 sm:mx-8 md:mx-55">
             {
                 reviewData.map((elem, idx)=>{

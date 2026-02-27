@@ -27,11 +27,11 @@ const Aboutus = () => {
     ]
 
     return (
-        <div className="w-full bg-gray-100 py-20" id="about">
+        <div className="w-full bg-[#05051B] py-20" id="about">
 
             <div className='max-w-7xl mx-auto px-6 md:px-12'>
 
-                <h1 className="text-center text-3xl md:text-5xl font-bold mb-16">About Us</h1>
+                <h1 className="text-center text-white text-3xl md:text-5xl font-bold mb-16">About Us</h1>
 
                 {
                     aboutData.map(

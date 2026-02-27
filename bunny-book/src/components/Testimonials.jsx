@@ -37,8 +37,12 @@ const Testimonials = () => {
     ]
 
     return (
-        <div className="w-full bg-[#221248] py-20">   
+        <div id="testimonials" className="w-full bg-[#221248] py-20">   
+
+            <h1 className="text-center text-white text-3xl md:text-5xl font-bold mb-16">Testimonials</h1>
+
             <div className="scrollBarRemover flex flex-nowrap gap-6 md:gap-8 lg:gap-10 overflow-x-auto pb-6 mx-4 sm:mx-8 md:mx-55">
+
             {
                 reviewData.map((elem, idx)=>{
                     return <TestimonialsSection key={idx} image={elem.image} name={elem.name} review={elem.review} status={elem.status}/>

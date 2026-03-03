@@ -1,9 +1,9 @@
-import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Aboutus from './components/Aboutus'
 import Testimonials from './components/Testimonials'
 import Contactus from './components/Contactus'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
       <Aboutus/>
       <Testimonials/>
       <Contactus/>
+      <Footer/>
     </div>
   )
 }

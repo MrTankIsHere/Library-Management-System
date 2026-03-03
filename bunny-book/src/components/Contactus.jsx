@@ -3,53 +3,95 @@ import React from 'react'
 const Contactus = () => {
   return (
     <div id="contactus" className="bg-[#05051B]">
+  <div className="container mx-auto px-5 py-24">
+    {/* Title - fixed typo and centered */}
+    <h1 className="text-center text-3xl md:text-5xl font-bold mb-16 text-white">
+      Contact Us
+    </h1>
 
-      {/* <h1 className="text-center text-3xl md:text-5xl font-bold mb-16">Conatct Us</h1> */}
-
-      <section class="text-white relative">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="text-center text-3xl md:text-5xl font-bold mb-16">Contact Us</h1>
-          </div>
-          <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-[#A99AD3]">Name</label>
-                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-2 focus:ring-gray-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                </div>
-              </div>
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="email" class="leading-7 text-sm text-[#A99AD3]">Email</label>
-                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-2 focus:ring-gray-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                </div>
-              </div>
-              <div class="p-2 w-full">
-                <div class="relative">
-                  <label for="message" class="leading-7 text-sm text-[#A99AD3]">Message</label>
-                  <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-black focus:bg-white focus:ring-2 focus:ring-gray-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                </div>
-              </div>
-              <div class="p-2 w-full">
-                <button class="flex cursor-pointer font-bold mx-auto text-[#05051B] bg-[#A99AD3] border-0 py-2 px-8 focus:outline-none hover:bg-gray-300 active:scale-95 rounded text-lg">Submit</button>
-              </div>
-              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a class="text-gray-400">BunnyBook@library.com</a> <br />
-              </div>
+    {/* Centered form container */}
+    <div className="lg:w-1/2 md:w-2/3 mx-auto bg-[#A99AD3] rounded-2xl p-8">
+      <form>
+        <div className="flex flex-wrap">
+          
+          {/* First Name input */}
+          <div className="p-2 w-full md:w-1/2">
+            <div className="relative">
+              {/* <label htmlFor="firstName" className="leading-7 text-sm text-gray-700">
+                First Name
+              </label> */}
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                className="w-full bg-[#221248] rounded border border-[#05051B] focus:border-gray-300  focus:ring-2 focus:ring-[#A99AD3] text-base outline-none text-white py-2 px-3 transition-all"
+              />
             </div>
           </div>
+
+          {/* Last Name input */}
+          <div className="p-2 w-full md:w-1/2">
+            <div className="relative">
+              {/* <label htmlFor="lastName" className="leading-7 text-sm text-gray-700">
+                Last Name
+              </label> */}
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
+                className="w-full bg-[#221248] rounded border border-[#05051B] focus:border-gray-300 focus:ring-2 focus:ring-[#A99AD3] text-base outline-none text-white py-2 px-3 transition-all"
+              />
+            </div>
+          </div>
+
+          {/* Email input */}
+          <div className="p-2 w-full">
+            <div className="relative">
+              {/* <label htmlFor="email" className="leading-7 text-sm text-gray-700">
+                Email
+              </label> */}
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="demo@email.com"
+                className="w-full bg-[#221248] rounded border border-[#05051B] focus:border-gray-300 focus:ring-2 focus:ring-[#A99AD3] text-base outline-none text-white py-2 px-3 transition-all"
+              />
+            </div>
+          </div>
+
+          {/* Message input */}
+          <div className="p-2 w-full">
+            <div className="relative">
+              {/* <label htmlFor="message" className="leading-7 text-sm text-gray-700">
+                Message
+              </label> */}
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your message here..."
+                rows={5}
+                className="w-full bg-[#221248] rounded border border-[#05051B] focus:border-gray-300 focus:ring-2 focus:ring-[#A99AD3] text-base outline-none text-white py-2 px-3 resize-none transition-all"
+              />
+            </div>
+          </div>
+
+          {/* Submit Button */}
+          <div className="p-2 w-full">
+            <button
+              type="submit"
+              className="flex mx-auto bg-[#05051B] text-[#A99AD3] hover:bg-gray-950 active:scale-95 px-8 py-3 rounded-xl font-bold text-xl cursor-pointer transition-all">
+              Submit
+            </button>
+          </div>
+
         </div>
-      </section>
-
-      {/* <form action="">
-          <input type="text" name="name" id="" placeholder="Your Name" />
-          <input type="email" name="email" id="" placeholder="demo@email.com" />
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Message" />
-          <button>Submit</button>
-        </form> */}
-
+      </form>
     </div>
+  </div>
+</div>
   )
 }
 

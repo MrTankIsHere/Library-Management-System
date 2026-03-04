@@ -11,7 +11,7 @@ const Navbar = () => {
 
       <div className='max-w-7xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8'>
 
-        {/* Logo */}
+        {/* Logo section */}
         <Link to="/">
           <div className='flex items-center space-x-2 cursor-pointer'>
             <img 
@@ -25,7 +25,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        {/* Desktop Menu */}
+        {/* Desktop Menu section */}
         <ul className='hidden md:flex items-center space-x-6 text-[#A99AD3] font-semibold'>
           <li className='hover:text-gray-400 transition'><Link to="/">Home</Link></li>
           <li className='hover:text-gray-400 transition'><Link to="/#about">About</Link></li>
@@ -33,7 +33,7 @@ const Navbar = () => {
           <li className='hover:text-gray-400 transition'><Link to="/#contactus">Contact</Link></li>
         </ul>
 
-        {/* Desktop Login Button */}
+        {/* Desktop Login Button section */}
         <div className='hidden md:block'>
           <Link to="/login">
             <button className='px-4 py-2 bg-[#A99AD3] text-[#05051B] active:scale-95 font-semibold rounded-lg hover:bg-gray-300 transition cursor-pointer'>
@@ -42,7 +42,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Icon */}
+        {/* Mobile Menu Icon section */}
         <div className='md:hidden'>
           <button 
             onClick={() => setIsOpen(!isOpen)}
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Dropdown section */}
       {isOpen && (
         <div className='md:hidden bg-[#05051B] px-4 pb-4 space-y-3'>
 

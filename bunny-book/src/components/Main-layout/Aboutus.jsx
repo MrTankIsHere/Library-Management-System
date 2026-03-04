@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from "../assets/images/about-us1.jpg"
-import img2 from "../assets/images/about-us2.jpg"
-import img3 from "../assets/images/about-us3.jpg"
+import img1 from "../../assets/images/about-us1.jpg"
+import img2 from "../../assets/images/about-us2.jpg"
+import img3 from "../../assets/images/about-us3.jpg"
 import AboutSection from './AboutSection'
 
 const Aboutus = () => {
